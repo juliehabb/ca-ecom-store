@@ -1,27 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Header from "./components/header/header";
+import Footer from ".components/footer/footer";
 
-import React from 'react';
-
-function Product() {
-  return <div> Milk - 19.99</div>;
-}
 
 function App() {
-  const productTite = "May";
-  const productPrice = "8.99";
   return (
-    <div>
-      <p>
-        Hello world{productTite}{productPrice} 
-      </p>
-      <ul>
-        <li> <Product/> </li>
-        <li> Bread - 23.99</li>
-        <li> Cheese - 40.99</li>
-      </ul>
-    </div>
-  );
+    <BrowserRouter>
+        <Router>
+      <Header />
+      <Routes>
+        <Route path="/" element={<homepage />} />
+        <Route path="/product/:id" element={<productPage />} />
+        <Route path="/cart" element={<cartPage />} />
+        <Route path="/checkout-success" element={<checkoutSuccessPage />} />
+        <Route path="/contact" element={<contactPage />} />
+      </Routes>
+      <Footer />
+    </Router>
+    </BrowserRouter>
+
+  )
 }
 
 export default App;
