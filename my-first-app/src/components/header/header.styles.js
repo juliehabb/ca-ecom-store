@@ -6,9 +6,9 @@ export const HeaderContainer = styled.header`
     align-items: center;
     padding: 20px;
     background-color: #fff;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 10px rgba(240, 10, 10, 0.1);
     max-width: 1200px;
-    margin: 0 auto
+    margin: 0 auto;
 
     @media (max-width: 768px) {
        flex-direction: column;
@@ -16,7 +16,7 @@ export const HeaderContainer = styled.header`
     }
 `;
 
-export const Logo = styled.logo`
+export const Logo = styled.div`
    display: flex;
 `;
 
