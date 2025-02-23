@@ -8,7 +8,7 @@ const Header = () => {
             <Logo>
                 <img src="" ></img>
             </Logo>
-            <SearchBar> placeholder="Search products..." </SearchBar>
+            <SearchBar placeholder="Search products..." />
             <Nav>
                 <NavLinks>
                     <a href="/" >Home</a>
