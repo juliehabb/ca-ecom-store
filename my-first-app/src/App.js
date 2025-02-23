@@ -1,26 +1,18 @@
 import React from "react";
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Header from "./components/header/header";
-import Footer from ".components/footer/footer";
+import styled from "styled-components";
 
+const TestDiv = styled.div`
+  background-color: red;
+  color: white;
+  padding: 20px;
+`;
 
 function App() {
-  return (
-    <BrowserRouter>
-        <Router>
-      <Header />
-      <Routes>
-        <Route path="/" element={<homepage />} />
-        <Route path="/product/:id" element={<productPage />} />
-        <Route path="/cart" element={<cartPage />} />
-        <Route path="/checkout-success" element={<checkoutSuccessPage />} />
-        <Route path="/contact" element={<contactPage />} />
-      </Routes>
-      <Footer />
-    </Router>
-    </BrowserRouter>
-
-  )
+    return (
+        <TestDiv>
+            This is a test.
+        </TestDiv>
+    );
 }
 
 export default App;
